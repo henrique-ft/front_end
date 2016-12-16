@@ -1,0 +1,648 @@
+/* _______________________________ < Codemage > _____________________________________ */
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/efd6FGWWGX5Z3ztwLBrG9T48MEBspdEKklcQvcIk8pU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quattrocento Sans'), local('QuattrocentoSans'), url(https://fonts.gstatic.com/s/quattrocentosans/v9/efd6FGWWGX5Z3ztwLBrG9cZ4HySTEWshgORbPp2tk8k.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7em; 
+  line-height: 1.6; 
+  margin: 0 15%;
+  padding-top: 25px;
+  font-weight: 400;
+  font-family: 'Quattrocento Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+/* ______________________________ < Tipografia > ___________________________________ */
+
+small {
+  font-size: 37.1802498512%;
+  color: #b8b8b8;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.0rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+}
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+@media (min-width: 550px) {
+
+  h1 {
+     font-size: 5.0rem;
+   }
+  
+  h2 {
+     font-size: 4.2rem;
+   }
+  
+  h3 {
+     font-size: 3.6rem;
+   }
+  
+  h4 {
+     font-size: 3.0rem;
+   }
+  
+  h5 {
+     font-size: 2.4rem;
+   }
+  
+  h6 {
+     font-size: 1.5rem;
+   }
+}
+
+p {
+  margin-top: 0; 
+}
+
+/* _______________________________ < Row > __________________________________________ */
+
+.row {
+  clear: both; 
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ________________________________ < Groups > ______________________________________ */
+
+.group:before,
+.group:after {
+  content:"";  
+  display:table;
+}
+
+.group:after {
+  clear:both;
+}
+
+.group {
+  zoom:1;
+}
+
+/* _______________________________ < Colunas > ______________________________________ */
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    
+  .col {
+    margin: 1% 0 1% 0%;
+  } 
+}
+
+/*________________________________ < Grid > ________________________________________ */
+
+.twelve {
+  width: 100%;
+}
+
+.eleven {
+  width: 91.53%;
+}
+
+.ten {
+  width: 83.06%;
+}
+
+.nine {
+  width: 74.6%;
+}
+
+.eight {
+  width: 66.13%;
+}
+
+.seven {
+  width: 57.66%;
+}
+
+.six {
+  width: 49.2%;
+}
+
+.five {
+  width: 40.73%;
+}
+
+.four {
+  width: 32.26%;
+}
+
+.three {
+  width: 23.8%;
+}
+
+.two {
+  width: 15.33%;
+}
+
+.one {
+  width: 6.86%;
+}
+
+@media only screen and (max-width: 700px) { 
+
+  .twelve {
+    width: 100%;
+  }
+
+  .eleven {
+    width: 100%;
+  }
+  
+  .ten {
+    width: 100%;
+  }
+
+  .nine {
+    width: 100%;
+  }
+
+  .eight {
+    width: 100%;
+  }
+
+  .seven {
+    width: 100%;
+  }
+
+  .six {
+    width: 100%;
+  }
+
+  .five {
+    width: 100%;
+  }
+
+  .four {
+    width: 100%;
+  }
+
+  .three {
+    width: 100%;
+  }
+
+  .two {
+    width: 100%;
+  }
+
+  .one {
+    width: 100%;
+  }
+
+}
+
+/* ________________________________ < Links > ________________________________________ */
+
+a {
+  color: #4682B4;
+}
+
+a:hover {
+  color: #6CA6CD;
+}
+
+/* ________________________________ < Buttons > ______________________________________ */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform:uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button::first-letter,
+button::first-letter,
+input[type="submit"]::first-letter,
+input[type="reset"]::first-letter,
+input[type="button"]::first-letter {
+  text-transform: uppercase;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #5890b4;
+  border-color: #5890b4;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #3a6783;
+  border-color: #3a6783;
+}
+
+/* ___________________________________ < Forms > __________________________________ */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {  
+  height: 38px;      
+  padding: 6px 10px;
+  background-color: #fff;      
+  border: 1px solid #D1D1D1;      
+  box-shadow: none;      
+  box-sizing: border-box;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  background-color: #ffffff;
+  outline: 0;
+  border: 1px solid #b1b1b1;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+fieldset{
+  background-color: #f7f7f7;
+  border: 1px solid #d7d7d7;
+  padding: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {    
+  display: inline;
+}
+
+label > .label-body {   
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+/* ______________________________ < Listas > ________________________________________ */
+
+ul {
+  list-style: circle inside;
+}
+
+ol { 
+  list-style: decimal inside;
+}
+
+ol, ul { 
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul { 
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+li { 
+  margin-bottom: 1rem;
+}
+
+/* ______________________________ < Code > ________________________________________ */
+
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+/* _______________________________ < Tabelas > _______________________________________ */
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0; 
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+/* ________________________________ < Dividers > _____________________________________ */
+
+.title-divider{
+  padding:4px;
+  color:black;
+  border-bottom: 1px solid #ddd;
+  opacity: 0.8;
+}
+
+/* ________________________________ < Callouts > _______________________________________ */
+
+.callout{
+  position: relative;
+  min-height: 1em;
+  margin: 1em 0;
+  background: #F8F8F9;
+  padding: 2.4rem 2.4rem;
+  line-height: 1.4285em;
+  color: rgba(0,0,0,.87);
+  -webkit-transition: opacity .1s ease,color .1s ease,background .1s ease,box-shadow .1s ease;
+  transition: opacity .1s ease,color .1s ease,background .1s ease,box-shadow .1s ease;
+  box-shadow: 0 0 0 1px rgba(34,36,38,.22) inset,0 0 0 0 transparent;
+  border-radius: 2px; 
+}
+
+.sucess{  
+  box-shadow: 0 0 0 1px #A3C293 inset,0 0 0 0 transparent;
+  background-color: #FCFFF5;
+  color: #2C662D;
+}
+
+.error{
+  box-shadow: 0 0 0 1px #E0B4B4 inset,0 0 0 0 transparent;
+  background-color: #FFF6F6;
+  color: #9F3A38;
+}
+
+.warning{
+  background-color: #FFFAF3;
+  color: #573A08;
+  box-shadow: 0 0 0 1px #C9BA9B inset,0 0 0 0 transparent;
+}
+
+/* _______________________________ < Panels > ________________________________________ */
+
+.panel{ 
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 2.4rem 2.4rem;
+  margin-bottom: 20px;
+}
+
+/* _______________________________ < Top bar > ________________________________________ */
+
+.top-bar{
+  position:fixed;
+  top:0px;
+  left:0px;
+  padding: 0 15%;
+  width:100%;
+  height:60px;
+  background-color:white;
+  border-bottom: 1px solid #ddd;
+  z-index:3;
+}
+
+.top-bar ul li{
+  display: inline;
+  background-color: #ffffff;
+}
+
+.top-bar ul{
+  display: inline;
+  position: relative;
+  top: 20px;
+}
+
+.top-bar a{
+  color: #545454;
+  text-decoration: none;
+  background-color: #fefefe;
+  padding: 0px 32px;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #fff;
+  margin-right: -5px;
+}
+
+.top-bar-first{
+  border-left: 1px solid #fff !important;
+}
+
+.top-bar a:hover {
+  background-color: #f8f8f8;
+  padding-top: 26px;
+  padding-bottom: 18px;
+  border-left: 1px solid #d9d9d9 !important;
+  border-right: 1px solid #d9d9d9 !important;
+}
+
+.top-bar .active{
+  background-color: #f8f8f8;
+  padding-top: 26px;
+  padding-bottom: 18px;
+  border-left: 1px solid #d9d9d9 !important;
+  border-right: 1px solid #d9d9d9 !important;      
+}
+
+/* _______________________________ < Imagens > ________________________________________ */
+
+.category-image{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 40%;
+}
+
+.img-container{
+  width:35px
+}
+
+/* _______________________________ < Utilidades > _____________________________________ */
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left { 
+  float: left;
+}
+ 
+.u-no-decoration,.u-no-decoration:hover{
+  text-decoration: none;
+}
+
+.u-xs-margin-top{
+  margin-top: 10px;
+}
+
+.u-s-margin-top{
+  margin-top: 20px;
+}
+
+/* Setar o breakpoint no max-width */
+
+@media only screen and (max-width: 700px){
+     
+  .push {  
+    display: none;  
+  }
+
+}
+
+/* _____________________________ < Application > ____________________________________ */
