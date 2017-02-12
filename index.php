@@ -149,7 +149,7 @@
             <div class="twelve col">
                 
                 <h4 class="u-s-margin-top title-divider">Form</h4> 
-                <div class="callout sucess">* Lorem ipsum dolor site a met lo rein</div>  
+                <div class="callout success">* Lorem ipsum dolor site a met lo rein</div>  
                 <form>
                     <fieldset>
                         <div class="row">
