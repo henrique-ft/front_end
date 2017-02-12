@@ -509,7 +509,7 @@ td:last-child {
   border-radius: 2px; 
 }
 
-.sucess{  
+.success{  
   box-shadow: 0 0 0 1px #A3C293 inset,0 0 0 0 transparent;
   background-color: #FCFFF5;
   color: #2C662D;
